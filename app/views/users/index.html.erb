@@ -3,10 +3,9 @@
 <h1>Users</h1>
 
 <div id="users">
-  <% @users.each do |user| %>
-    <%= render user %>
+  <% 3.times do %>
     <p>
-      <%= link_to "Show this user", user %>
+      <%= @users.first.calculation_result %>
     </p>
   <% end %>
 </div>
